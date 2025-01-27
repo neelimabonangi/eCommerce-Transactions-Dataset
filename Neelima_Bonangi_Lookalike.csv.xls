@@ -1,0 +1,69 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "8b29e81f-3483-4408-a69b-8696badae702",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "CSV file 'Lookalike.csv' has been created successfully.\n"
+     ]
+    }
+   ],
+   "source": [
+    "import csv\n",
+    "\n",
+    "# Your lookalikes dictionary\n",
+    "lookalikes = {\n",
+    "    'C0001': [('C0005', 0.95), ('C0002', 0.92), ('C0003', 0.91)],\n",
+    "    'C0002': [('C0001', 0.92), ('C0004', 0.89), ('C0003', 0.88)],\n",
+    "    'C0003': [('C0001', 0.91), ('C0005', 0.87), ('C0004', 0.85)],\n",
+    "}\n",
+    "\n",
+    "# Define the CSV file path\n",
+    "csv_file_path = 'Lookalike.csv'\n",
+    "\n",
+    "# Define the header\n",
+    "header = ['cust_id', 'lookalike_cust_id', 'similarity_score']\n",
+    "\n",
+    "# Open the CSV file in write mode\n",
+    "with open(csv_file_path, mode='w', newline='') as file:\n",
+    "    writer = csv.writer(file)\n",
+    "    writer.writerow(header)  # Write the header row\n",
+    "\n",
+    "    # Iterate over the lookalikes dictionary\n",
+    "    for cust_id, lookalike_list in lookalikes.items():\n",
+    "        for lookalike_cust_id, similarity_score in lookalike_list:\n",
+    "            # Write each lookalike entry as a new row\n",
+    "            writer.writerow([cust_id, lookalike_cust_id, similarity_score])\n",
+    "\n",
+    "print(f\"CSV file '{csv_file_path}' has been created successfully.\")\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
