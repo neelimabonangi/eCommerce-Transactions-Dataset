@@ -3,6 +3,8 @@
 In the dynamic world of eCommerce, understanding customer behavior is essential. This project focuses on a comprehensive analysis of transactional data to extract actionable business insights. Our approach includes:
 
 - **Exploratory Data Analysis (EDA):** Delving deep into the data to uncover hidden patterns and trends.
+- ![EDA](https://github.com/user-attachments/assets/3fc47274-54c2-4f2a-83a1-9875c95a2b24)
+
 - **Lookalike Modeling:** Crafting models to identify potential customers mirroring the traits of our most valuable clientele.
 - **Customer Segmentation:** Employing clustering techniques to categorize customers, enabling tailored marketing strategies.
 
