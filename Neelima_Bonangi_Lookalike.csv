@@ -33,30 +33,6 @@
 "| C0003     | C0004               |               0.85 |"
 "+-----------+---------------------+--------------------+"
 
-# Define the CSV file name
-csv_file_name = 'Lookalike.csv'
-
-import pandas as pd
-
-# Define the column names
-column_names = ['cust_id', 'lookalike_cust_id', 'similarity_score']
-
-# Read the CSV file with the specified column names
-df = pd.read_csv('Lookalike.csv', names=column_names, header=None)
-
-print(df)
-
- cust_id  lookalike_cust_id  similarity_score
-0  cust_id  lookalike_cust_id  similarity_score
-1    C0001              C0005              0.95
-2    C0001              C0002              0.92
-3    C0001              C0003              0.91
-4    C0002              C0001              0.92
-5    C0002              C0004              0.89
-6    C0002              C0003              0.88
-7    C0003              C0001              0.91
-8    C0003              C0005              0.87
-9    C0003              C0004              0.85
 
 
 
