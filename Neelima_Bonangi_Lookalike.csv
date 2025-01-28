@@ -1,36 +1,89 @@
-"lookalikes = {"
-"'C0001': [('C0005', 0.95), ('C0002', 0.92), ('C0003', 0.91)],"
-"'C0002': [('C0001', 0.92), ('C0004', 0.89), ('C0003', 0.88)],"
-"'C0003': [('C0001', 0.91), ('C0005', 0.87), ('C0004', 0.85)],"
-"}"
-"table_data = []"
-"for cust_id, lookalike_list in lookalikes.items():"
-"for lookalike_cust_id, similarity_score in lookalike_list:"
-"table_data.append([cust_id, lookalike_cust_id, similarity_score])"
-"from tabulate import tabulate"
-""
-"headers = ['cust_id', 'lookalike_cust_id', 'similarity_score']"
-"print(tabulate(table_data, headers=headers, tablefmt='grid'))"
-"+-----------+---------------------+--------------------+"
-"| cust_id   | lookalike_cust_id   |   similarity_score |"
-"+===========+=====================+====================+"
-"| C0001     | C0005               |               0.95 |"
-"+-----------+---------------------+--------------------+"
-"| C0001     | C0002               |               0.92 |"
-"+-----------+---------------------+--------------------+"
-"| C0001     | C0003               |               0.91 |"
-"+-----------+---------------------+--------------------+"
-"| C0002     | C0001               |               0.92 |"
-"+-----------+---------------------+--------------------+"
-"| C0002     | C0004               |               0.89 |"
-"+-----------+---------------------+--------------------+"
-"| C0002     | C0003               |               0.88 |"
-"+-----------+---------------------+--------------------+"
-"| C0003     | C0001               |               0.91 |"
-"+-----------+---------------------+--------------------+"
-"| C0003     | C0005               |               0.87 |"
-"+-----------+---------------------+--------------------+"
-"| C0003     | C0004               |               0.85 |"
-"+-----------+---------------------+--------------------+"
+lookalikes = {
+'C0001': [('C0005', 0.95), ('C0002', 0.92), ('C0003', 0.91)],
+'C0002': [('C0001', 0.92), ('C0004', 0.89), ('C0003', 0.88)],
+'C0003': [('C0001', 0.91), ('C0005', 0.87), ('C0004', 0.85)],
+}
+
+table_data = []
+for cust_id, lookalike_list in lookalikes.items():
+for lookalike_cust_id, similarity_score in lookalike_list:
+table_data.append([cust_id, lookalike_cust_id, similarity_score])
+
+from tabulate import tabulate
+
+headers = ['cust_id', 'lookalike_cust_id', 'similarity_score']
+print(tabulate(table_data, headers=headers, tablefmt='grid'))
++-----------+---------------------+--------------------+
+| cust_id   | lookalike_cust_id   |   similarity_score |
++===========+=====================+====================+
+| C0001     | C0005               |               0.95 |
++-----------+---------------------+--------------------+
+| C0001     | C0002               |               0.92 |
++-----------+---------------------+--------------------+
+| C0001     | C0003               |               0.91 |
++-----------+---------------------+--------------------+
+| C0002     | C0001               |               0.92 |
++-----------+---------------------+--------------------+
+| C0002     | C0004               |               0.89 |
++-----------+---------------------+--------------------+
+| C0002     | C0003               |               0.88 |
++-----------+---------------------+--------------------+
+| C0003     | C0001               |               0.91 |
++-----------+---------------------+--------------------+
+| C0003     | C0005               |               0.87 |
++-----------+---------------------+--------------------+
+| C0003     | C0004               |               0.85 |
++-----------+---------------------+--------------------+
+
+import csv
+
+# Your data
+data = [
+    ['cust_id', 'lookalike_cust_id', 'similarity_score'],
+    ['C0001', 'C0005', 0.95],
+    ['C0001', 'C0002', 0.92],
+    ['C0001', 'C0003', 0.91],
+    ['C0002', 'C0001', 0.92],
+    ['C0002', 'C0004', 0.89],
+    ['C0002', 'C0003', 0.88],
+    ['C0003', 'C0001', 0.91],
+    ['C0003', 'C0005', 0.87],
+    ['C0003', 'C0004', 0.85]
+
+]
+
+# Define the CSV file name
+csv_file_name = 'Lookalike.csv'
+
+# Open the CSV file in write mode
+with open(csv_file_name, mode='w', newline='') as file:
+    writer = csv.writer(file)
+    # Write all rows to the CSV file
+    writer.writerows(data)
+
+print(f"CSV file '{csv_file_name}' has been created successfully.")
+
+import pandas as pd
+
+# Define the column names
+column_names = ['cust_id', 'lookalike_cust_id', 'similarity_score']
+
+# Read the CSV file with the specified column names
+df = pd.read_csv('Lookalike.csv', names=column_names, header=None)
+
+print(df)
+
+ cust_id  lookalike_cust_id  similarity_score
+0  cust_id  lookalike_cust_id  similarity_score
+1    C0001              C0005              0.95
+2    C0001              C0002              0.92
+3    C0001              C0003              0.91
+4    C0002              C0001              0.92
+5    C0002              C0004              0.89
+6    C0002              C0003              0.88
+7    C0003              C0001              0.91
+8    C0003              C0005              0.87
+9    C0003              C0004              0.85
+
 
  
