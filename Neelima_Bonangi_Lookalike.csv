@@ -52,7 +52,7 @@ data = [
 
 ]
 
-# Define the CSV file name
+# Define the Csv file name
 csv_file_name = 'Lookalike.csv'
 
 # Open the CSV file in write mode
