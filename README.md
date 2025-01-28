@@ -31,6 +31,8 @@ This rich dataset enables a thorough analysis of sales patterns, customer behavi
   - Converted data types and created new features to enhance the dataset.
 
 - **Exploratory Data Analysis (EDA):**
+  ![EDA](https://github.com/user-attachments/assets/b39f5a41-879d-41ce-94eb-558b9d38bc41)
+
   - Charted sales over time to spot trends.
   - Studied buying habits to understand customer preferences.
   - Identified top-selling products and categories boosting revenue.
