@@ -53,13 +53,6 @@ data = [
 # Define the CSV file name
 csv_file_name = 'Lookalike.csv'
 
-# Open the CSV file in write mode
-with open(csv_file_name, mode='w', newline='') as file:
-    writer = csv.writer(file)
-    # Write all rows to the CSV file
-    writer.writerows(data)
-
-print(f"CSV file '{csv_file_name}' has been created successfully.")
 
 import pandas as pd
 
