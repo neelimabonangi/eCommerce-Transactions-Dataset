@@ -3,10 +3,14 @@
 In the dynamic world of eCommerce, understanding customer behavior is essential. This project focuses on a comprehensive analysis of transactional data to extract actionable business insights. Our approach includes:
 
 - **Exploratory Data Analysis (EDA):** Delving deep into the data to uncover hidden patterns and trends.
-- ![EDA](https://github.com/user-attachments/assets/3fc47274-54c2-4f2a-83a1-9875c95a2b24)
+ ![EDA](https://github.com/user-attachments/assets/3fc47274-54c2-4f2a-83a1-9875c95a2b24)
 
 - **Lookalike Modeling:** Crafting models to identify potential customers mirroring the traits of our most valuable clientele.
+  ![Lookalike](https://github.com/user-attachments/assets/58cd0c25-8ea7-4637-a927-3c17467d8b2f)
+
 - **Customer Segmentation:** Employing clustering techniques to categorize customers, enabling tailored marketing strategies.
+  ![Clustering](https://github.com/user-attachments/assets/cbdd43f7-d5c5-482b-b409-f10cc23a252b)
+
 
 **Objectives:**
 
@@ -31,8 +35,6 @@ This rich dataset enables a thorough analysis of sales patterns, customer behavi
   - Converted data types and created new features to enhance the dataset.
 
 - **Exploratory Data Analysis (EDA):**
-  ![EDA](https://github.com/user-attachments/assets/b39f5a41-879d-41ce-94eb-558b9d38bc41)
-
   - Charted sales over time to spot trends.
   - Studied buying habits to understand customer preferences.
   - Identified top-selling products and categories boosting revenue.
@@ -63,6 +65,8 @@ This rich dataset enables a thorough analysis of sales patterns, customer behavi
   - Identified potential customers similar to our top clients.
 
 - **Customer Segmentation Insights:**
+  ![Clustering output](https://github.com/user-attachments/assets/37076f51-996c-49bb-a4b1-7ca7008c5421)
+
   - Divided customers into distinct groups, enabling personalized marketing.
 
 **Conclusion:**
