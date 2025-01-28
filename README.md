@@ -28,6 +28,8 @@ Converted data types and created new features to enhance the dataset.
 Exploratory Data Analysis (EDA):
 Charted sales over time to spot trends.
 Studied buying habits to understand customer likes.
+![EDA](https://github.com/user-attachments/assets/905be490-7aca-45fd-a796-7caad0a7921f)
+
 
 Identified top-selling products and categories boosting revenue.
 
