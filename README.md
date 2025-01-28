@@ -22,11 +22,13 @@ Methodology:
 
 Data Cleaning and Preprocessing:
 Handled missing values and outliers to maintain data accuracy.
+
 Converted data types and created new features to enhance the dataset.
 
 Exploratory Data Analysis (EDA):
 Charted sales over time to spot trends.
 Studied buying habits to understand customer likes.
+
 Identified top-selling products and categories boosting revenue.
 
 Lookalike Modeling:
